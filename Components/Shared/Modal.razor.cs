@@ -2,7 +2,7 @@
 
 namespace AppBlazor.Components.Shared
 {
-    public partial class Modal : ComponentBase
+    public class Modal : ComponentBase
     {
         [Parameter]
         public string Title { get; set; }
