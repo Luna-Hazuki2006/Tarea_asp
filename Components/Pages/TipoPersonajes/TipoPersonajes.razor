@@ -37,3 +37,16 @@ else {
     </table>
 }
 <button @onclick="Create" >Crear</button>
+
+@if(ShowForm){
+    <TipoPersonaje ActualizarLista="@GetAll" tipoPersonaje="@tipoPersonaje"></TipoPersonaje>
+}
+
+<button class="btn btn-primary" @onclick="() => ModalDialog.Open()">Click me!</button>
+<Modal @ref="@Modal" Title="Holisssss">
+    <div class="row">
+        <TipoPersonaje ActualizarLista="@GetAll" tipoPersonaje="@tipoPersonaje"></TipoPersonaje>
+
+        <button class="btn btn-primary" @onclick="() => ModalDialog.Close();">Close</button>
+    </div>
+</Modal>
