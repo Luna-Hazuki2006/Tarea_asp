@@ -41,3 +41,15 @@ else
             </table>
 }
 <button @onclick="Create" >Crear</button>
+
+@if(ShowForm){
+    <Enemigo ActualizarLista="@GetAll" enemigo="@enemigo"></Enemigo>
+}
+
+<button class="btn btn-primary" @onclick="() => ModalDialog.Open()">Click me!</button>
+<Tarea_asp.Components.Shared.Modal @ref="@ModalDialog" Title="Prueba">
+    <div class="row">
+        <Enemigo ActualizarLista="@GetAll" enemigo="@enemigo"></Enemigo>
+        <button class="btn btn-primary" @onclick="() => ModalDialog.Close()">Close</button>
+    </div>
+</Tarea_asp.Components.Shared.Modal>

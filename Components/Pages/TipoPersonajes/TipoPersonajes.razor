@@ -43,10 +43,9 @@ else {
 }
 
 <button class="btn btn-primary" @onclick="() => ModalDialog.Open()">Click me!</button>
-<Modal @ref="@Modal" Title="Holisssss">
+<Tarea_asp.Components.Shared.Modal @ref="@ModalDialog" Title="Prueba">
     <div class="row">
         <TipoPersonaje ActualizarLista="@GetAll" tipoPersonaje="@tipoPersonaje"></TipoPersonaje>
-
-        <button class="btn btn-primary" @onclick="() => ModalDialog.Close();">Close</button>
+        <button class="btn btn-primary" @onclick="() => ModalDialog.Close()">Close</button>
     </div>
-</Modal>
+</Tarea_asp.Components.Shared.Modal>

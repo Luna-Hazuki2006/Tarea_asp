@@ -26,18 +26,28 @@ else
             <tbody>
             @foreach (var per in lstPersonaje)
             {
-
-
-                        <tr>
-                            <td>@per.Id</td>
-                            <td>@per.Nombre</td>
-                            <td>@per.Nivel</td>
-                            <td><button @onclick="(() => Update(per))">Modificar</button></td>
-                            <td><button @onclick="(() => Delete(per))"> Eliminar</button></td>
-                            <td><button @onclick="(() => Read(per))"> Leer</button></td>
-                        </tr>
+                <tr>
+                    <td>@per.Id</td>
+                    <td>@per.Nombre</td>
+                    <td>@per.Nivel</td>
+                    <td><button @onclick="(() => Update(per))">Modificar</button></td>
+                    <td><button @onclick="(() => Delete(per))"> Eliminar</button></td>
+                    <td><button @onclick="(() => Read(per))"> Leer</button></td>
+                </tr>
             }
             </tbody>
         </table>
 }
 <button @onclick="Create" >Crear</button>
+
+@if(ShowForm){
+    <Personaje ActualizarLista="@GetAll" personaje="@personaje"></Personaje>
+}
+
+<button class="btn btn-primary" @onclick="() => ModalDialog.Open()">Click me!</button>
+<Tarea_asp.Components.Shared.Modal @ref="@ModalDialog" Title="Prueba">
+    <div class="row">
+        <Personaje ActualizarLista="@GetAll" personaje="@personaje"></Personaje>
+        <button class="btn btn-primary" @onclick="() => ModalDialog.Close()">Close</button>
+    </div>
+</Tarea_asp.Components.Shared.Modal>
