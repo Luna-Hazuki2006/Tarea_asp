@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JIf7FXSd2Gw1hf5ZHZL6hBGNh5eMlNyekj6L3g8TnP0=",
+  "Hash": "UPFd8UD3a8vS8s610eRQ7qBiUjKYeCIBURv2fJSVzEM=",
   "Source": "Tarea_asp",
   "BasePath": "_content/Tarea_asp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Tarea_asp\\wwwroot",
       "Source": "Tarea_asp",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\",
       "BasePath": "_content/Tarea_asp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tarea_asp.styles.css",
+      "Identity": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tarea_asp.styles.css",
       "SourceId": "Tarea_asp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Tarea_asp",
       "RelativePath": "Tarea_asp.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tarea_asp.styles.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Tarea_asp.styles.css"
     },
     {
-      "Identity": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tarea_asp.bundle.scp.css",
+      "Identity": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tarea_asp.bundle.scp.css",
       "SourceId": "Tarea_asp",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Tarea_asp",
       "RelativePath": "Tarea_asp.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tarea_asp.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Tarea_asp.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\app.css",
+      "Identity": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\app.css",
       "SourceId": "Tarea_asp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\",
       "BasePath": "_content/Tarea_asp",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "Tarea_asp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\",
       "BasePath": "_content/Tarea_asp",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Tarea_asp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\",
       "BasePath": "_content/Tarea_asp",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\favicon.png",
+      "Identity": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\favicon.png",
       "SourceId": "Tarea_asp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\d\\Desktop\\Ana Paula\\Programas ASP net\\Tarea_asp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\user\\Documents\\Mis documentos\\Programas asp net\\Tarea_asp\\wwwroot\\",
       "BasePath": "_content/Tarea_asp",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
