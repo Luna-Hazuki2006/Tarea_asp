@@ -1,0 +1,43 @@
+@page "/Enemigos"
+@rendermode InteractiveServer
+@inherits EnemigosBase
+
+<PageTitle>Lista de enemigos</PageTitle>
+
+<h1>Esta es una página para listar todos los enemigos</h1>
+
+@if (lstEnemigo == null)
+{
+            <p><em>Loading...</em></p>
+}
+else
+{
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Nivel de amenaza</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+            @foreach (var tipo in lstEnemigo)
+            {
+
+
+                                <tr>
+                                    <td>@tipo.Id</td>
+                                    <td>@tipo.Nombre</td>
+                                    <td>@tipo.Nivel_Amenaza</td>
+                                    <td><button @onclick="(() => Update(tipo))">Modificar</button></td>
+                                    <td><button @onclick="(() => Delete(tipo))"> Eliminar</button></td>
+                                    <td><button @onclick="(() => Read(tipo))"> Leer</button></td>
+                                </tr>
+            }
+                </tbody>
+            </table>
+}
+<button @onclick="Create" >Crear</button>

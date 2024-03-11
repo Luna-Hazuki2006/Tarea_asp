@@ -1,0 +1,39 @@
+@page "/TipoPersonajes"
+@rendermode InteractiveServer
+@inherits TipoPersonajesBase
+
+<PageTitle>Lista de tipos de personajes</PageTitle>
+
+<h1>Lista de Tipos de personajes</h1>
+
+@if (lstTipoPersonaje == null)
+{
+    <p><em>Loading...</em></p>
+}
+else {
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var tipo in lstTipoPersonaje){
+
+
+                <tr>
+                    <td>@tipo.Id</td>
+                    <td>@tipo.Nombre</td>
+                    <td><button @onclick="(() => Update(tipo))">Modificar</button></td>
+                    <td><button @onclick="(() => Delete(tipo))"> Eliminar</button></td>
+                    <td><button @onclick="(() => Read(tipo))"> Leer</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+<button @onclick="Create" >Crear</button>

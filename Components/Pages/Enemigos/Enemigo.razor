@@ -1,0 +1,36 @@
+@page "/Enemigo"
+@rendermode InteractiveServer
+@inherits EnemigoBase
+
+<PageTitle>Un enemigo</PageTitle>
+
+<h1>Esta es una página para consultar, modificar o crear un enemigo</h1>
+
+<EditForm Model="@enemigo" OnValidSubmit="Post">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Id: </label>
+        <InputNumber class="from-control" @bind-Value="enemigo.Id" />
+    </div>
+    <div class="form-group">
+        <label>Nombre</label>
+        <InputText @bind-Value="enemigo.Nombre" />
+        <ValidationMessage For="@(() => enemigo.Nombre)" />
+    </div>
+    <div class="form-group">
+        <label>Nivel de amenaza: </label>
+        <InputNumber @bind-Value="enemigo.Nivel_Amenaza" />
+        <ValidationMessage For="@(() => enemigo.Nivel_Amenaza)" />
+
+    </div>
+    <div class="form-group">
+        <label>Vida: </label>
+        <InputNumber @bind-Value="enemigo.Vida" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Agregar" />
+    </div>
+    <ValidationSummary />
+
+</EditForm>

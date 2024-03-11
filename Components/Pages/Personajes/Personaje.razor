@@ -1,0 +1,69 @@
+@page "/Personaje"
+@rendermode InteractiveServer
+@inherits PersonajeBase
+
+<PageTitle>Un personaje</PageTitle>
+
+<h1>Esta es una página para consultar, modificar o crear un personaje</h1>
+
+<EditForm Model="@personaje" OnValidSubmit="Post">
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Id: </label>
+        <InputNumber class="from-control" @bind-Value="personaje.Id" />
+    </div>
+    <div class="form-group">
+        <label>Nombre</label>
+        <InputText @bind-Value="personaje.Nombre" />
+        <ValidationMessage For="@(() => personaje.Nombre)" />
+    </div>
+    <div class="form-group">
+        <label>Tipo: </label>
+        <InputNumber @bind-Value="personaje.Tipo_Id" />
+    </div>
+    <div class="form-group">
+        <label>energía: </label>
+        <InputNumber @bind-Value="personaje.Energia" />
+    </div>
+    <div class="form-group">
+        <label>inteligencia: </label>
+        <InputNumber @bind-Value="personaje.Inteligencia" />
+    </div>
+    <div class="form-group">
+        <label>fuerza: </label>
+        <InputNumber @bind-Value="personaje.Fuerza" />
+    </div>
+    <div class="form-group">
+        <label>resistencia: </label>
+        <InputNumber @bind-Value="personaje.Resistencia" />
+        <ValidationMessage For="@(() => personaje.Resistencia)" />
+
+    </div>
+    <div class="form-group">
+        <label>defensa: </label>
+        <InputNumber @bind-Value="personaje.Defensa" />
+    </div>
+    <div class="form-group">
+        <label>experiencia: </label>
+        <InputNumber class="m-2"  @bind-Value="personaje.Experiencia" />
+    </div>
+    <div class="form-group">
+        <label>nivel: </label>
+        <InputNumber @bind-Value="personaje.Nivel" />
+    </div>
+    <div class="form-group">
+        <label>Salud: </label>
+        <InputNumber @bind-Value="personaje.Salud" />
+    </div>
+
+    <div class="form-group">
+        <label>Agilidad: </label>
+        <InputNumber @bind-Value="personaje.Agilidad" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Agregar" />
+    </div>
+    <ValidationSummary />
+
+</EditForm>
