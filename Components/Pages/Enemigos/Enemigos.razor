@@ -4,6 +4,9 @@
 
 <PageTitle>Lista de enemigos</PageTitle>
 
+<main id="main-content">
+
+
 <h1>Esta es una página para listar todos los enemigos</h1>
 
 @if (lstEnemigo == null)
@@ -28,14 +31,14 @@ else
             {
 
 
-                                <tr>
-                                    <td>@tipo.Id</td>
-                                    <td>@tipo.Nombre</td>
-                                    <td>@tipo.Nivel_Amenaza</td>
-                                    <td><button @onclick="(() => Update(tipo))">Modificar</button></td>
-                                    <td><button @onclick="(() => Delete(tipo))"> Eliminar</button></td>
-                                    <td><button @onclick="(() => Read(tipo))"> Leer</button></td>
-                                </tr>
+                <tr>
+                    <td>@tipo.Id</td>
+                    <td>@tipo.Nombre</td>
+                    <td>@tipo.Nivel_Amenaza</td>
+                    <td><button @onclick="(() => Update(tipo))">Modificar</button></td>
+                    <td><button @onclick="(() => Delete(tipo))"> Eliminar</button></td>
+                    <td><button @onclick="(() => Read(tipo))"> Leer</button></td>
+                </tr>
             }
                 </tbody>
             </table>
@@ -53,3 +56,5 @@ else
         <button class="btn btn-primary" @onclick="() => ModalDialog.Close()">Close</button>
     </div>
 </Tarea_asp.Components.Shared.Modal>
+
+</main>
