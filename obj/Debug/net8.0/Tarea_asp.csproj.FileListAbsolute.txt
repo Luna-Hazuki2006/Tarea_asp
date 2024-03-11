@@ -36,3 +36,4 @@ C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\scoped
 C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\Tarea_asp.csproj.AssemblyReference.cache
 C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\Tarea_asp.csproj.CopyComplete
+C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\Tarea_asp.sourcelink.json
