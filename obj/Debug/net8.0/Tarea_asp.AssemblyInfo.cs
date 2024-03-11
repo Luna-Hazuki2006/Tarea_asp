@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tarea_asp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b6148f1788745e562414e7b6f1270e8b6d1d0e3e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f7f8276ba542a36990fb0e647f085d2f048124ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tarea_asp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tarea_asp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
