@@ -6,9 +6,11 @@
 
 <h1>Esta es una página para listar todos los personajes</h1>
 
+<p>@Valor</p>
+
 @if (lstPersonaje == null)
 {
-        <p><em>Loading...</em></p>
+    <p><em>Loading...</em></p>
 }
 else
 {
@@ -51,3 +53,7 @@ else
         <button class="btn btn-primary" @onclick="() => ModalDialog.Close()">Close</button>
     </div>
 </Tarea_asp.Components.Shared.Modal>
+
+<Personaje @ref="personajecomponente">
+
+</Personaje>

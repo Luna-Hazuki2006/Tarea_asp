@@ -19,15 +19,21 @@ namespace Tarea_asp.Components
 
         [Inject]
         PersonajeService personajeService { get; set; }
+        [Inject]
+        public string Valor {get; set;}
         public List<Personaje>? lstPersonaje { get; set; }
 
         public bool ShowForm { get; set; }
 
         public Modal ModalDialog { get; set; }
+        public Tarea_asp.Components.Pages.Personajes.Personaje personajecomponente { get; set; }
+
 
         protected override async Task OnInitializedAsync()
         {
             await GetAll();
+            Personaje personaje = personajecomponente.personaje;
+            Valor = personaje.ToString();
         }
 
         public void Create()

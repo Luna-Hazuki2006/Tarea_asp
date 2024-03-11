@@ -13,8 +13,8 @@ namespace Tarea_asp.Components
         [Parameter]
         public EventCallback OnPersonajeCreado { get; set; }
 
-        [Parameter]
-        public Personaje personaje { get; set; }
+        // [Parameter]
+        public Personaje personaje = new Personaje();
 
         [Parameter]
         public EventCallback ActualizarLista { get; set; }
