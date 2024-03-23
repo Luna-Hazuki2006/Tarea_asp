@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Tarea_asp.Data.Models;
 using Newtonsoft.Json;
 using System.Net.Http;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 namespace Tarea_asp.Data
 {
@@ -29,51 +30,59 @@ namespace Tarea_asp.Data
             }
         }
 
-        public static async Task<Response<T>> Execute<T>(string url, MethodHttp method, T objectRequest)
+        // Extraño node :(
+        public static async Task<Response<Tout>> Execute<Tin, Tout>(string url, MethodHttp method, Tin objectRequest, string token = "")
         {
-            Response<T> response = new Response<T>();
+            Response<Tout> respuesta = new Response<Tout>();
             try
             {
-
                 using (HttpClient client = new HttpClient())
-                {
-
-                    var myContent = JsonConvert.SerializeObject((method != MethodHttp.GET) ? method != MethodHttp.DELETE ? objectRequest : "" : "");
-                    var bytecontent = new ByteArrayContent(Encoding.UTF8.GetBytes(myContent));
-                    bytecontent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
-                    //Si es get o delete no le mandamos content
+                { // node es mejor
+                    var myContent = JsonConvert.SerializeObject((method != MethodHttp.GET) ? method != MethodHttp.DELETE ? objectRequest : "" : ""); 
+                    var byteArray = new ByteArrayContent(Encoding.UTF8.GetBytes(myContent));
+                    byteArray.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
                     var request = new HttpRequestMessage(CreateHttpMethod(method), url)
                     {
-                        Content = (method != MethodHttp.GET) ? method != MethodHttp.DELETE ? bytecontent : null : null
+                        Content = (method != MethodHttp.GET) ? method != MethodHttp.DELETE ? byteArray : null : null
                     };
-
+                    if (token != "") request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
                     using (HttpResponseMessage res = await client.SendAsync(request))
                     {
                         using (HttpContent content = res.Content)
                         {
                             string data = await content.ReadAsStringAsync();
                             if (data != null)
-                                response.Data = JsonConvert.DeserializeObject<T>(data);
-
-                            response.StatusCode = res.StatusCode.ToString();
+                            {
+                                if (typeof(Tout) == typeof(string)) respuesta.Data = (Tout)Convert.ChangeType(data, typeof(Tout));
+                                else respuesta.Data = JsonConvert.DeserializeObject<Tout>(data);
+                            }
+                            respuesta.StatusCode = res.StatusCode.ToString();
+                            if (res.IsSuccessStatusCode) respuesta.Ok = true;
                         }
                     }
                 }
             }
             catch (WebException ex)
             {
-                response.StatusCode = "ServerError";
-                var res = (HttpWebResponse)ex.Response;
-                if (res != null)
-                    response.StatusCode = response.StatusCode.ToString();
+                respuesta.StatusCode = "ServerError";
+                var final = (HttpWebResponse)ex.Response;
+                if (final != null) respuesta.StatusCode = respuesta.StatusCode.ToString();
+                respuesta.Ok = false; 
+                if (!respuesta.Ok) respuesta.Message = $"No aceptable {respuesta.StatusCode}"; 
+            }
+            catch (JsonSerializationException) 
+            {
+                respuesta.StatusCode = "Token invalido";
+                respuesta.Message = "Por favor intentar de nuevo :D";
+                respuesta.Ok = false; 
             }
             catch (Exception ex)
             {
-                response.StatusCode = "AppError";
-                response.Message = ex.Message;
+                respuesta.StatusCode = "¡Un error terrible ha sucedio!";
+                respuesta.Message = ex.Message;
+                respuesta.Ok = false;
             }
-            return response;
-
+            return respuesta;
         }
     }
 }

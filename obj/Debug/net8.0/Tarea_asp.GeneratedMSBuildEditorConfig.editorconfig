@@ -9,79 +9,87 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Tarea_asp
 build_property.RootNamespace = Tarea_asp
-build_property.ProjectDir = C:\Users\user\Documents\Mis documentos\Programas asp net\Tarea_asp\
+build_property.ProjectDir = C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Documents\Mis documentos\Programas asp net\Tarea_asp
+build_property.MSBuildProjectDirectory = C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/App.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Batallas/Pelear.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Batallas/Pelear.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xCYXRhbGxhc1xQZWxlYXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Counter.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Error.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Home.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Weather/Weather.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Weather/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyXFdlYXRoZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Routes.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Shared/Modal.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Shared/Modal.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTaGFyZWRcTW9kYWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/_Imports.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Layout/MainLayout.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-k2fmddk2hi
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Layout/NavMenu.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-9b7pgmyy0n
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Enemigos/Enemigo.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Enemigos/Enemigo.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbmVtaWdvc1xFbmVtaWdvLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-wp1ldx3pnn
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Enemigos/Enemigos.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Enemigos/Enemigos.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFbmVtaWdvc1xFbmVtaWdvcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-q6zow16o8e
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Personajes/Personaje.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Personajes/Personaje.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJzb25hamVzXFBlcnNvbmFqZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-b9vma5gvy7
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/Personajes/Personajes.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Personajes/Personajes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQZXJzb25hamVzXFBlcnNvbmFqZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0s89y9gy3a
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/TipoPersonajes/TipoPersonaje.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Sesiones/Sesion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTZXNpb25lc1xTZXNpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v0xlew6op8
+
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/TipoPersonajes/TipoPersonaje.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaXBvUGVyc29uYWplc1xUaXBvUGVyc29uYWplLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-3f9z6rrtk3
 
-[C:/Users/user/Documents/Mis documentos/Programas asp net/Tarea_asp/Components/Pages/TipoPersonajes/TipoPersonajes.razor]
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/TipoPersonajes/TipoPersonajes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xUaXBvUGVyc29uYWplc1xUaXBvUGVyc29uYWplcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-hfazk4b7x5
+
+[C:/Users/d/Desktop/Ana Paula/Programas ASP net/Tarea_asp/Components/Pages/Usuarios/Usuarios.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xVc3Vhcmlvc1xVc3Vhcmlvcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ganmvhvudp

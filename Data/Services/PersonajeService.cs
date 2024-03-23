@@ -15,7 +15,7 @@ namespace Tarea_asp.Data.Services
             try
             {
                 response.Message = (await
-                    Consumer.Execute<Personaje>(
+                    Consumer.Execute<Personaje, Personaje>(
                         "https://localhost:7128/api/Personaje",
                         MethodHttp.GET,
                         personaje
@@ -35,7 +35,7 @@ namespace Tarea_asp.Data.Services
             try
             {
                 response = await Consumer
-                    .Execute<List<Personaje>>(
+                    .Execute<List<Personaje>, List<Personaje>>(
                         "http://localhost:5284/api/Personaje",
                         MethodHttp.GET,
                         personajes
@@ -54,7 +54,7 @@ namespace Tarea_asp.Data.Services
             try
             {
                 response = await Consumer
-                    .Execute<Personaje>(
+                    .Execute<Personaje, Personaje>(
                         $"http://localhost:5284/api/Personaje/{personaje.Id}",
                         MethodHttp.PUT,
                         personaje
@@ -73,7 +73,7 @@ namespace Tarea_asp.Data.Services
             try
             {
                 response.Message = (await
-                    Consumer.Execute<Personaje>(
+                    Consumer.Execute<Personaje, Personaje>(
                         $"https://localhost:7128/api/Personaje/{personaje.Id}",
                         MethodHttp.DELETE,
                         personaje
@@ -92,7 +92,7 @@ namespace Tarea_asp.Data.Services
             try
             {
                 response = await Consumer
-                    .Execute<Personaje>(
+                    .Execute<Personaje, Personaje>(
                         $"http://localhost:5284/api/Personaje/{personaje.Id}",
                         MethodHttp.PUT,
                         personaje
