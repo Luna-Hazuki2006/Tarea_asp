@@ -34,8 +34,8 @@ namespace Tarea_asp.Data.Services
             return respuesta;
         }
 
-        public void CerrarSesion() {
-
+        public async void CerrarSesion() {
+            await _protectedLocalStorage.DeleteAsync("token");
         }
     }
 }
