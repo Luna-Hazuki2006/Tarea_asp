@@ -15,13 +15,13 @@ namespace Tarea_asp.Data.Services
             _protectedLocalStorage = protectedLocal;
         }
 
-        public async Task<Response<string>> IniciarSesion(Usuario usuario) {
-            Response<string> respuesta = new Response<string>();
+        public async Task<Response<Sesion>> IniciarSesion(Usuario usuario) {
+            Response<Sesion> respuesta = new Response<Sesion>();
             try
             {
                 respuesta = await Consumer.
-                    Execute<Usuario, string>(
-                        $"https://localhost:7082/api/Sesion/IniciarSesion", 
+                    Execute<Usuario, Sesion>(
+                        $"https://localhost:7003/api/Sesion", 
                         MethodHttp.POST, 
                         usuario
                     );
@@ -34,8 +34,22 @@ namespace Tarea_asp.Data.Services
             return respuesta;
         }
 
-        public async void CerrarSesion() {
-            await _protectedLocalStorage.DeleteAsync("token");
+        public async void CerrarSesion(Sesion sesion) {
+            Response<string> respuesta = new Response<string>();
+            try
+            {
+                respuesta = await Consumer.
+                    Execute<Sesion, string>(
+                        $"https://localhost:7003/api/Sesion", 
+                        MethodHttp.DELETE, 
+                        sesion
+                    );
+                if (respuesta.Ok) await _protectedLocalStorage.DeleteAsync("token");
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

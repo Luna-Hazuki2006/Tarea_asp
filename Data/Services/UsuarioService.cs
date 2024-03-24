@@ -21,7 +21,7 @@ namespace Tarea_asp.Data.Services
             {
                 respuesta = await Consumer.
                     Execute<Usuario, Usuario>(
-                        $"https://localhost:7082/api/Usuario", 
+                        $"https://localhost:7003/api/Usuario", 
                         MethodHttp.POST, 
                         usuario);
             }
@@ -40,7 +40,7 @@ namespace Tarea_asp.Data.Services
 			    string token = jwt.Success ? jwt.Value : "";
 			    respuesta = await Consumer.
                     Execute<Usuario, Usuario>(
-                        $"https://localhost:7082/api/Usuario/{usuario.Cedula}", 
+                        $"https://localhost:7003/api/Usuario/{usuario.Cedula}", 
                         MethodHttp.PUT, 
                         usuario, 
                         token);
