@@ -22,13 +22,8 @@ namespace Tarea_asp.Components
         public string mensaje = "";
         public bool Iniciado { get; set; } = true;
 
-        public void IniciarSesion()
-        {
-            Iniciado = true;
-        }
-        public void RegistrarUsuario()
-        {
-            Iniciado = false;
+        public void Cambiar() {
+            Iniciado = !Iniciado;
         }
         public async Task Registrar()
         {

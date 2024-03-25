@@ -26,7 +26,7 @@ namespace Tarea_asp.Components
         public bool ShowForm { get; set; }
 
         public Modal ModalDialog { get; set; }
-        public Tarea_asp.Components.Pages.Personajes.Personaje personajecomponente { get; set; }
+        public Pages.Personajes.Personaje personajecomponente { get; set; }
 
 
         protected override async Task OnInitializedAsync()

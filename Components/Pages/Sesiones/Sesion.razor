@@ -4,6 +4,7 @@
 
 <p>@mensaje</p>
 
+@if (@Iniciado) {
 <h3>Iniciar sesión</h3>
 <EditForm Model="@usuario" OnValidSubmit="Iniciar" >
     <DataAnnotationsValidator />
@@ -23,8 +24,9 @@
     <ValidationSummary/>
 </EditForm>
 
-<input type="" class="btn btn-success" value="Registrar usuario"  @onclick="RegistrarUsuario"/>
-
+<p>¿No tienes una cuenta? ¡Regístrate!</p>
+<button type="button" class="btn btn-success" @onclick="Cambiar">Registrar usuario</button>
+} else {
 <h3>Registrarse</h3>
 
 <EditForm Model="@usuario" OnValidSubmit="Registrar" >
@@ -78,4 +80,7 @@
     </div>
     <ValidationSummary/>
 </EditForm>
-<input type="" class="btn btn-success" value="Iniciar sesión"  @onclick="IniciarSesion"/>
+
+<p>¿Ya tienes una cuenta? ¡Inicia sesión!</p>
+<button type="button" class="btn btn-success" @onclick="Cambiar">Iniciar sesión</button>
+}
