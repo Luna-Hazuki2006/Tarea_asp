@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Components;
 using Tarea_asp.Data.Models;
 using Tarea_asp.Data.Services;
 
-namespace Tarea_asp.Components.Pages.Sesiones
+namespace Tarea_asp.Components
 {
     public class SesionBase : ComponentBase
     {
@@ -44,9 +44,9 @@ namespace Tarea_asp.Components.Pages.Sesiones
         public async Task Iniciar()
         {
             mensaje = "";
-            Response<string> respuesta = await sesionService.IniciarSesion(usuario);
+            var respuesta = await sesionService.IniciarSesion(usuario);
             if (respuesta.Ok) Navigation.NavigateTo("/", forceLoad: true);
-            else mensaje = respuesta.Data;
+            else mensaje = respuesta.Data.Token;
         }
     }
 }

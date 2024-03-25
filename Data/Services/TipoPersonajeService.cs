@@ -18,7 +18,7 @@ namespace Tarea_asp.Data.Services
             {
                 response.Message = (await
                     Consumer.Execute<TipoPersonaje, TipoPersonaje>(
-                        "https://localhost:7128/api/Tipo_Personaje",
+                        "https://localhost:7003/api/Tipo_Personaje",
                         MethodHttp.GET,
                         tipo
                     )).Message;
@@ -40,7 +40,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<List<TipoPersonaje>, List<TipoPersonaje>>(
-                        "http://localhost:5284/api/Tipo_Personaje",
+                        "https://localhost:7003/api/Tipo_Personaje",
                         MethodHttp.GET,
                         tipoPersonajes
                     );
@@ -59,7 +59,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<TipoPersonaje, TipoPersonaje>(
-                        $"http://localhost:5284/api/Tipo_Personaje/{tipo.Id}",
+                        $"https://localhost:7003/api/Tipo_Personaje/{tipo.Id}",
                         MethodHttp.PUT,
                         tipo
                     );
@@ -78,7 +78,7 @@ namespace Tarea_asp.Data.Services
             {
                 response.Message = (await
                     Consumer.Execute<TipoPersonaje, TipoPersonaje>(
-                        $"https://localhost:7128/api/Tipo_Personaje/{tipo.Id}",
+                        $"https://localhost:7003/api/Tipo_Personaje/{tipo.Id}",
                         MethodHttp.DELETE,
                         tipo
                     )).Message;
@@ -97,7 +97,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<TipoPersonaje, TipoPersonaje>(
-                        $"http://localhost:5284/api/Tipo_Personaje/{tipo.Id}",
+                        $"https://localhost:7003/api/Tipo_Personaje/{tipo.Id}",
                         MethodHttp.PUT,
                         tipo
                     );

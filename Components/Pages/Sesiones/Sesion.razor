@@ -4,81 +4,78 @@
 
 <p>@mensaje</p>
 
-@if (@Iniciado)
-{
-    <h3>Iniciar sesión</h3>
-    <EditForm Model="@usuario" OnValidSubmit="Iniciar" >
-        <DataAnnotationsValidator />
-        <div class="form-group">
-            <label>Cédula: </label>
-            <InputText @bind-Value="usuario.Cedula" />
-            <ValidationMessage For="@(() => usuario.Cedula)"/>
-        </div>
-        <div class="form-group">
-            <label>Contraseña: </label>
-            <InputText type="password" @bind-Value="usuario.Contraseña" />
-            <ValidationMessage For="@(() => usuario.Contraseña)"/>
-        </div>
-        <div class="form-group">
-            <input type="submit" class="btn btn-success" value="Iniciar sesión"/>
-        </div>
-        <ValidationSummary/>
-    </EditForm>
+<h3>Iniciar sesión</h3>
+<EditForm Model="@usuario" OnValidSubmit="Iniciar" >
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Cédula: </label>
+        <InputText @bind-Value="usuario.Cedula" />
+        <ValidationMessage For="@(() => usuario.Cedula)"/>
+    </div>
+    <div class="form-group">
+        <label>Contraseña: </label>
+        <InputText type="password" @bind-Value="usuario.Contraseña" />
+        <ValidationMessage For="@(() => usuario.Contraseña)"/>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Iniciar sesión"/>
+    </div>
+    <ValidationSummary/>
+</EditForm>
 
-    <input type="" class="btn btn-success" value="Registrar usuario"  @onclick="RegistrarUsuario"/>
-} else {
-    <h3>Registrarse</h3>
+<input type="" class="btn btn-success" value="Registrar usuario"  @onclick="RegistrarUsuario"/>
 
-    <EditForm Model="@usuario" OnValidSubmit="Registrar" >
-        <DataAnnotationsValidator />
-        <div class="form-group">
-            <label>Cédula: </label>
-            <InputText @bind-Value="usuario.Cedula" />
-            <ValidationMessage For="@(() => usuario.Cedula)"/>
-        </div>
-        <div class="form-grop">
-            <label>Nombres: </label>
-            <InputText @bind-Value="usuario.Nombres" />
-            <ValidationMessage For="@(() => usuario.Nombres)"/>
-        </div>
-        <div class="form-grop">
-            <label>Apellidos: </label>
-            <InputText @bind-Value="usuario.Apellidos" />
-            <ValidationMessage For="@(() => usuario.Apellidos)"/>
-        </div>
-        <div class="form-grop">
-            <label>Apodo (opcional): </label>
-            <InputText @bind-Value="usuario.Apodo" />
-        </div>
-        <div class="form-grop">
-            <label>Correo: </label>
-            <InputText type="email" @bind-Value="usuario.Correo" />
-            <ValidationMessage For="@(() => usuario.Correo)"/>
-        </div>
-        <div class="form-group">
-            <label>Contraseña: </label>
-            <InputText type="password" @bind-Value="usuario.Contraseña" />
-            <ValidationMessage For="@(() => usuario.Contraseña)"/>
-        </div>
-        <div class="form-grop">
-            <label>Contraseña: </label>
-            <InputText type="password" @bind-Value="usuario.Contraseña" />
-            <ValidationMessage For="@(() => usuario.Contraseña)"/>
-        </div>
-        <div class="form-grop">
-            <label>Fecha de nacimiento: </label>
-            <InputDate @bind-Value="usuario.Nacimiento" />
-            <ValidationMessage For="@(() => usuario.Nacimiento)"/>
-        </div>
-        <div class="form-grop">
-            <label>Género (opcional): </label>
-            <InputText @bind-Value="usuario.Genero" />
-        </div>
+<h3>Registrarse</h3>
 
-        <div class="form-group">
-            <input type="submit" class="btn btn-success" value="Registrar usuario"/>
-        </div>
-        <ValidationSummary/>
-    </EditForm>
-    <input type="" class="btn btn-success" value="Iniciar sesión"  @onclick="IniciarSesion"/>
-}
+<EditForm Model="@usuario" OnValidSubmit="Registrar" >
+    <DataAnnotationsValidator />
+    <div class="form-group">
+        <label>Cédula: </label>
+        <InputText @bind-Value="usuario.Cedula" />
+        <ValidationMessage For="@(() => usuario.Cedula)"/>
+    </div>
+    <div class="form-grop">
+        <label>Nombres: </label>
+        <InputText @bind-Value="usuario.Nombres" />
+        <ValidationMessage For="@(() => usuario.Nombres)"/>
+    </div>
+    <div class="form-grop">
+        <label>Apellidos: </label>
+        <InputText @bind-Value="usuario.Apellidos" />
+        <ValidationMessage For="@(() => usuario.Apellidos)"/>
+    </div>
+    <div class="form-grop">
+        <label>Apodo (opcional): </label>
+        <InputText @bind-Value="usuario.Apodo" />
+    </div>
+    <div class="form-grop">
+        <label>Correo: </label>
+        <InputText type="email" @bind-Value="usuario.Correo" />
+        <ValidationMessage For="@(() => usuario.Correo)"/>
+    </div>
+    <div class="form-group">
+        <label>Contraseña: </label>
+        <InputText type="password" @bind-Value="usuario.Contraseña" />
+        <ValidationMessage For="@(() => usuario.Contraseña)"/>
+    </div>
+    <div class="form-grop">
+        <label>Contraseña: </label>
+        <InputText type="password" @bind-Value="usuario.Contraseña" />
+        <ValidationMessage For="@(() => usuario.Contraseña)"/>
+    </div>
+    <div class="form-grop">
+        <label>Fecha de nacimiento: </label>
+        <InputDate @bind-Value="usuario.Nacimiento" />
+        <ValidationMessage For="@(() => usuario.Nacimiento)"/>
+    </div>
+    <div class="form-grop">
+        <label>Género (opcional): </label>
+        <InputText @bind-Value="usuario.Genero" />
+    </div>
+
+    <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Registrar usuario"/>
+    </div>
+    <ValidationSummary/>
+</EditForm>
+<input type="" class="btn btn-success" value="Iniciar sesión"  @onclick="IniciarSesion"/>

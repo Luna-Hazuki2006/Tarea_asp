@@ -77,5 +77,4 @@ C:\Users\user\Documents\Mis documentos\Programas asp net\Tarea_asp\obj\Debug\net
 C:\Users\user\Documents\Mis documentos\Programas asp net\Tarea_asp\obj\Debug\net8.0\Tarea_asp.genruntimeconfig.cache
 C:\Users\user\Documents\Mis documentos\Programas asp net\Tarea_asp\obj\Debug\net8.0\ref\Tarea_asp.dll
 C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\scopedcss\Components\Pages\Sesiones\Sesion.razor.rz.scp.css
-C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\scopedcss\Components\Pages\Usuarios\Usuarios.razor.rz.scp.css
 C:\Users\d\Desktop\Ana Paula\Programas ASP net\Tarea_asp\obj\Debug\net8.0\scopedcss\Components\Pages\Usuarios\UsuarioUnico.razor.rz.scp.css

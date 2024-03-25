@@ -13,8 +13,8 @@ namespace Tarea_asp.Components
         [Parameter]
         public EventCallback OnEnemigoCreado { get; set; }
 
-        [Parameter]
-        public Enemigo enemigo { get; set; }
+
+        public Enemigo enemigo = new Enemigo();
 
         [Parameter]
         public EventCallback ActualizarLista { get; set; }

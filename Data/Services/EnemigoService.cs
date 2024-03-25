@@ -16,7 +16,7 @@ namespace Tarea_asp.Data.Services
             {
                 response.Message = (await
                     Consumer.Execute<Enemigo, Enemigo>(
-                        "https://localhost:7128/api/Enemigo",
+                        "https://localhost:7003/api/Enemigo",
                         MethodHttp.GET,
                         enemigo
                     )).Message;
@@ -38,7 +38,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<List<Enemigo>, List<Enemigo>>(
-                        "http://localhost:5284/api/Enemigo",
+                        "https://localhost:7003/api/Enemigo",
                         MethodHttp.GET,
                         enemigos
                     );
@@ -57,7 +57,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<Enemigo, Enemigo>(
-                        $"http://localhost:5284/api/Enemigo/{enemigo.Id}",
+                        $"https://localhost:7003/api/Enemigo/{enemigo.Id}",
                         MethodHttp.PUT,
                         enemigo
                     );
@@ -76,7 +76,7 @@ namespace Tarea_asp.Data.Services
             {
                 response.Message = (await
                     Consumer.Execute<Enemigo, Enemigo>(
-                        $"https://localhost:7128/api/Enemigo/{enemigo.Id}",
+                        $"https://localhost:7003/api/Enemigo/{enemigo.Id}",
                         MethodHttp.DELETE,
                         enemigo
                     )).Message;
@@ -95,7 +95,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<Enemigo, Enemigo>(
-                        $"http://localhost:5284/api/Enemigo/{enemigo.Id}",
+                        $"https://localhost:7003/api/Enemigo/{enemigo.Id}",
                         MethodHttp.PUT,
                         enemigo
                     );

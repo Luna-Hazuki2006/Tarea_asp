@@ -16,7 +16,7 @@ namespace Tarea_asp.Data.Services
             {
                 response.Message = (await
                     Consumer.Execute<Personaje, Personaje>(
-                        "https://localhost:7128/api/Personaje",
+                        "https://localhost:7003/api/Personaje",
                         MethodHttp.GET,
                         personaje
                     )).Message;
@@ -36,7 +36,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<List<Personaje>, List<Personaje>>(
-                        "http://localhost:5284/api/Personaje",
+                        "https://localhost:7003/api/Personaje",
                         MethodHttp.GET,
                         personajes
                     );
@@ -55,7 +55,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<Personaje, Personaje>(
-                        $"http://localhost:5284/api/Personaje/{personaje.Id}",
+                        $"https://localhost:7003/api/Personaje/{personaje.Id}",
                         MethodHttp.PUT,
                         personaje
                     );
@@ -74,7 +74,7 @@ namespace Tarea_asp.Data.Services
             {
                 response.Message = (await
                     Consumer.Execute<Personaje, Personaje>(
-                        $"https://localhost:7128/api/Personaje/{personaje.Id}",
+                        $"https://localhost:7003/api/Personaje/{personaje.Id}",
                         MethodHttp.DELETE,
                         personaje
                     )).Message;
@@ -93,7 +93,7 @@ namespace Tarea_asp.Data.Services
             {
                 response = await Consumer
                     .Execute<Personaje, Personaje>(
-                        $"http://localhost:5284/api/Personaje/{personaje.Id}",
+                        $"https://localhost:7003/api/Personaje/{personaje.Id}",
                         MethodHttp.PUT,
                         personaje
                     );

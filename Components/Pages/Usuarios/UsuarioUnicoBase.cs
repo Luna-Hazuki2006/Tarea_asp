@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Components;
 using Tarea_asp.Data.Models;
 using Tarea_asp.Data.Services;
 
-namespace Tarea_asp.Components.Pages.Usuarios
+namespace Tarea_asp.Components
 {
     public class UsuarioBase : ComponentBase
     {

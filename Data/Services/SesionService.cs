@@ -25,7 +25,7 @@ namespace Tarea_asp.Data.Services
                         MethodHttp.POST, 
                         usuario
                     );
-                if (respuesta.Ok) await _protectedLocalStorage.SetAsync("token", respuesta.Data);
+                if (respuesta.Ok) await _protectedLocalStorage.SetAsync("token", respuesta.Data.Token);
             }
             catch (Exception e)
             {

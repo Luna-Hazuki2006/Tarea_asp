@@ -10,7 +10,7 @@
     <DataAnnotationsValidator />
     <div class="form-group">
         <label>Id: </label>
-        <InputNumber class="from-control" @bind-Value="tipoPersonaje.Id" disabled />
+        <InputNumber class="from-control" @bind-Value="tipoPersonaje.Id" />
     </div>
     <div class="form-group">
         <label>Nombre:</label>
@@ -21,6 +21,10 @@
         <label>Descripcion:</label>
         <InputText class="from-control" @bind-Value="tipoPersonaje.Descripcion" />
         <ValidationMessage For="@(() => tipoPersonaje.Nombre)" />
+    </div>
+
+     <div class="form-group">
+        <input type="submit" class="btn btn-success" value="Agregar" />
     </div>
 
     <ValidationSummary />

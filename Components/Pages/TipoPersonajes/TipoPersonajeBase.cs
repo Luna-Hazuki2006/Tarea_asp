@@ -13,8 +13,8 @@ namespace Tarea_asp.Components
         [Parameter]
         public EventCallback OnTipoPersonajeCreado { get; set; }
 
-        [Parameter]
-        public TipoPersonaje tipoPersonaje { get; set; }
+
+        public TipoPersonaje tipoPersonaje = new TipoPersonaje();
 
         [Parameter]
         public EventCallback ActualizarLista { get; set; }
